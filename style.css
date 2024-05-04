@@ -16,4 +16,353 @@ font-weight: 700;
 
 /* -------------------------------------------------- */
 
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 300;
+    margin: 0;
+}
 
+/* hlavicka */
+.uvod {
+    background-color: #F5F5F5;
+}
+
+.logo {
+    height: 30px;
+    margin: 20px 0 0 20px;
+}
+
+.hlavicka-vpravo {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu {
+    font-size: 13px;
+    list-style: none; 
+    display: flex;
+    margin-top: 10px;
+    padding: 0 20px 0 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #959595;
+    padding-right: 20px;
+}
+
+.menu-li {
+    display: inline;   
+}
+
+.menu-tlacitka {
+    margin-left: 20px;
+}
+
+.menu-tlacitka a {
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.tlacitko-primarni {
+    color: white;
+    background-color: #3498DB;
+    border-radius: 4px;
+    padding: 7px 10px;
+}
+
+.tlacitko-sekundarni {
+    border: 1px solid black;
+    color: black;
+    border-radius: 4px;
+    padding: 7px 10px;
+}
+
+.tlacitko-velke {
+    text-decoration: none;
+}
+
+/* banner */
+.banner {
+    display: flex;
+    flex-direction: column;
+    border-style: none;
+    padding: 0 20px 0 20px;
+    margin-bottom: 40px;
+}
+
+.minitext {
+    font-size: 13px;  
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.minitext a {
+    color: #3498DB;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-top: 40px;
+}
+
+.upoutavka {
+    font-size: 18px;
+    color: #a5a5a5;
+    margin-bottom: 30px;
+}
+
+.banner-foto {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.banner-foto img {
+    max-width: 80%;
+    width: 100%;
+}
+
+/* vlastnosti */
+.sekce-bila {
+    margin: 0 20px 20px 20px;
+}
+
+.vlastnosti {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.ikona {
+    height: 40px;
+    float: left;
+    margin: 20px 20px 0 20px;
+}
+
+.vlastnost {
+    border: 1px solid #E9E9E9;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.vlastnosti p {
+    margin: 0;
+    padding: 10px 20px 20px 80px;
+}
+
+.vlastnosti h2 {
+    margin: 0;
+    padding-top: 20px;
+}
+
+.vlastnost a {
+    font-size: 13px;
+    padding: 0 0 20px 80px;
+    color: #3498DB;
+}
+
+/* paticka */
+.sekce-cerna {
+    background-color: #252525;
+}
+
+.paticka {
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright {
+    font-size: 13px;
+    color: #959595;
+    text-align: center;
+    padding: 20px 0 0 40px;
+}
+
+.paticka-menu {
+    font-family: 'Rubik', sans-serif;
+    font-size: 13px;
+    text-align: right;
+    font-weight: bold;
+    list-style: none; 
+    margin: 20px 40px 0 0;
+    padding-bottom: 20px;   
+}
+
+.paticka-menu a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;    
+}
+
+@media (min-width: 480px) {
+.wrap {
+    max-width: 600px;
+    margin: auto;
+}
+
+.paticka {
+    max-width: 600px;
+    margin: auto;
+}
+}
+
+@media (min-width: 768px) {
+/* hlavicka */
+.wrap {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.uvod {
+    padding: 0 50px 0 50px;
+}
+
+.logo {
+    margin: 0;
+}
+
+.hlavicka {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0 50px 0;
+}
+
+.hlavicka-vpravo {
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.menu-tlacitka {
+    margin-left: 0;
+}
+
+/* banner */
+h1 {
+    font-size: 44px;
+    letter-spacing: -0.01em;
+    margin-top: 0;
+}
+
+.banner {
+    max-width: 1140px;
+    min-height: 600px;
+    margin: auto;
+    padding: 0;
+    flex-direction: row;
+}
+
+.banner-text {
+    max-width: 420px;
+}
+
+.banner-foto {
+    margin-left: -150px;
+    flex: 1;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.banner-foto img { 
+    max-width: 100%;   
+}
+
+.upoutavka {
+    margin-bottom: 50px;
+}
+
+.tlacitko-velke {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 16px 28px;
+}
+
+.minitext {
+    margin-top: 30px;
+}
+
+/* vlastnosti */
+.sekce-bila {
+    margin: 50px;
+}
+
+.vlastnosti {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.vlastnost {
+    flex-basis: calc((100% - 30px) / 2);
+    flex-grow: 1;
+}
+
+.ikona {
+    height: 50px;
+    margin: 30px 30px 0 30px;
+}
+
+.vlastnosti h2 {
+    padding-top: 30px;
+}
+
+.ikona-zvuk, .ikona-srdce {
+    margin-bottom: 0;
+}
+
+.ikona-kufrik, .ikona-slunce {
+    margin-bottom: 30px;
+}
+
+.ikona-kufrik, .ikona-srdce {
+    margin-right: 15px;
+}
+.ikona-slunce, .ikona-zvuk {
+    margin-left: 15px;
+}
+
+.vlastnosti p {
+    padding: 0 30px 0 110px;
+}
+
+.vlastnost a {
+    padding-left: 110px;
+    padding-bottom: 30px;
+}
+
+/* paticka */
+.sekce-cerna {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.paticka {
+    max-width: 1140px;
+    margin: auto;
+    padding: 50px 0 50px 0;
+}
+
+.copyright {
+    padding: 0;
+}
+
+.paticka-menu {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.paticka-menu a {
+    padding-right: 20px;
+}
+}
